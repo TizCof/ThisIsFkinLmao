@@ -1,17 +1,1 @@
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-function Send(title, desc, URL)
-    local Data = game:GetService("HttpService"):JSONEncode({
-        ["embeds"] = {{
-            ["title"] = title,
-            ["description"] = desc,
-            ["type"] = "rich",
-            ["color"] = tonumber(0x7269da),
-        }}
-    })
-    request = http_request or request or HttpPost or syn.request
-    request({Url = URL, Body = Data, Method = "POST", Headers = {["content-type"] = "application/json"}})
-end
-if HWID == "283DE6A6-EB60-4903-8868-C0742720E723" then
-        --local info_true_1 = {[1] = "",[2] = "RunToggle",[3] = {[1] = true,[2] = false}} game:GetService("Players").LocalPlayer.Backpack.Action:FireServer(unpack(info_true_1))
-    Send(game.Players.LocalPlayer.Name,"**JobId: **"..game.JobId.. "**| HWID:** "..HWID, "https://discord.com/api/webhooks/956187956660555799/L_ugeon1wcCnQY29EpDqfksbxaOEBwXgW9d7U0vR6XSwB6P6guCTo1Ndxa75V3kiW3NR")
-end
+-- yo mom
